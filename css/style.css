@@ -1,0 +1,79 @@
+/* ── Global Variables ── */
+:root {
+  --gold: #c9a84c;
+  --dark: #111111;
+  --dark-2: #1a1a1a;
+  --light-text: #f5f5f5;
+}
+
+/* ── Base ── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--dark);
+  color: var(--light-text);
+}
+
+/* ── Navbar ── */
+#mainNav {
+  background-color: rgba(0, 0, 0, 0.95);
+  border-bottom: 2px solid var(--gold);
+}
+
+.navbar-brand {
+  color: var(--gold) !important;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: var(--light-text) !important;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--gold) !important;
+}
+
+/* ── Gold Button ── */
+.btn-gold {
+  background-color: var(--gold);
+  color: #111;
+  font-weight: 700;
+  border: none;
+  padding: 0.75rem 2rem;
+  letter-spacing: 1px;
+  transition: background-color 0.3s;
+}
+
+.btn-gold:hover {
+  background-color: #e0b84e;
+  color: #111;
+}
+
+/* ── Hero ── */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url('../images/hero-bg.jpg') center/cover no-repeat;
+  padding-top: 80px;
+}
+
+/* ── Footer ── */
+.footer {
+  background-color: #000;
+  border-top: 2px solid var(--gold);
+  font-size: 0.9rem;
+}
+
+.footer a:hover {
+  color: var(--gold) !important;
+}
