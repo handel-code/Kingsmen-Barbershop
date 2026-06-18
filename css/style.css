@@ -100,3 +100,59 @@ body {
   color: var(--gold);
   display: block;
 }
+
+/* ── Why Choose Us ── */
+.why-us {
+  background-color: var(--dark);
+}
+
+.section-title {
+  color: var(--gold);
+  font-size: 2rem;
+}
+
+.section-subtitle {
+  color: #aaa;
+  font-size: 1.1rem;
+}
+
+.why-list {
+  list-style: none;
+  padding: 0;
+}
+
+.why-list li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.8rem;
+  align-items: flex-start;
+}
+
+.why-list li i {
+  color: var(--gold);
+  font-size: 1.4rem;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.why-list li p {
+  color: #bbb;
+  margin: 0;
+}
+
+.stat-card {
+  background-color: #222;
+  border: 1px solid #333;
+  border-radius: 10px;
+  transition: border-color 0.3s;
+}
+
+.stat-card:hover {
+  border-color: var(--gold);
+}
+
+.stat-number {
+  color: var(--gold);
+  font-size: 2.2rem;
+  font-weight: 800;
+}
