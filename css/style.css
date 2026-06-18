@@ -156,3 +156,62 @@ body {
   font-size: 2.2rem;
   font-weight: 800;
 }
+
+/* ── Page Banner ── */
+.page-banner {
+  min-height: 40vh;
+  background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+              url('../images/hero-bg.jpg') center/cover no-repeat;
+  padding-top: 80px;
+}
+
+/* ── Story Section ── */
+.story {
+  background-color: var(--dark-2);
+}
+
+.story-image-placeholder {
+  background-color: #222;
+  border: 2px solid var(--gold);
+  border-radius: 12px;
+  min-height: 350px;
+}
+
+/* ── Team Section ── */
+.team {
+  background-color: var(--dark);
+}
+
+.team-card {
+  background-color: #222;
+  border: 1px solid #333;
+  border-radius: 12px;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold);
+}
+
+.team-avatar {
+  width: 80px;
+  height: 80px;
+  background-color: #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--gold);
+}
+
+.team-avatar i {
+  font-size: 2.5rem;
+  color: var(--gold);
+}
+
+.text-gold {
+  color: var(--gold);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
