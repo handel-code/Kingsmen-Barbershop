@@ -270,3 +270,40 @@ body {
 .contact-info-item p.text-muted {
   color: #aaa !important;
 }
+
+/* ── Services Section ── */
+.services-section {
+  background-color: var(--dark);
+}
+
+.service-card {
+  background-color: #222;
+  border: 1px solid #333;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold);
+}
+
+.service-icon {
+  font-size: 2rem;
+  color: var(--gold);
+  display: block;
+}
+
+.text-muted-light {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.service-price {
+  color: var(--gold);
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-top: 1px solid #333;
+}
