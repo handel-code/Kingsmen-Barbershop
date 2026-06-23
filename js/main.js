@@ -57,3 +57,66 @@ filterBtns.forEach(btn => {
     });
   });
 });
+
+// ── Booking Form Validation ──
+function submitBooking() {
+  const name = document.getElementById('bookName')?.value.trim();
+  const phone = document.getElementById('bookPhone')?.value.trim();
+  const email = document.getElementById('bookEmail')?.value.trim();
+  const service = document.getElementById('bookService')?.value;
+  const date = document.getElementById('bookDate')?.value;
+  const time = document.getElementById('bookTime')?.value;
+  const feedback = document.getElementById('bookingFeedback');
+
+  if (!feedback) return;
+
+  // Check required fields
+  if (!name || !phone || !email || !service || !date || !time) {
+    feedback.innerHTML = `
+      <div class="alert alert-danger">
+        Please fill in all required fields marked with *.
+      </div>`;
+    return;
+  }
+
+  // Validate email
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    feedback.innerHTML = `
+      <div class="alert alert-danger">
+        Please enter a valid email address.
+      </div>`;
+    return;
+  }
+
+  // Validate date is not in the past
+  const selectedDate = new Date(date);
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  if (selectedDate < today) {
+    feedback.innerHTML = `
+      <div class="alert alert-danger">
+        Please select a future date for your appointment.
+      </div>`;
+    return;
+  }
+
+  // Success
+  const serviceText = document.getElementById('bookService').options[
+    document.getElementById('bookService').selectedIndex
+  ].text;
+
+  feedback.innerHTML = `
+    <div class="alert alert-success">
+      <strong>Booking Confirmed!</strong> Thank you, ${name}. 
+      Your appointment for <em>${serviceText}</em> on ${date} at ${time} has been received. 
+      We'll send a confirmation to ${email} shortly.
+    </div>`;
+
+  // Clear form
+  ['bookName','bookPhone','bookEmail','bookService','bookBarber',
+   'bookDate','bookTime','bookNotes'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.value = '';
+  });
+}
