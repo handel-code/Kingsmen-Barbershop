@@ -415,3 +415,78 @@ body {
   background-color: #2a2a2a;
   color: #fff;
 }
+
+/* ── Rating Summary ── */
+.rating-summary {
+  background-color: var(--dark);
+}
+
+.stars i {
+  color: var(--gold);
+  font-size: 1.5rem;
+}
+
+.rating-label {
+  color: #aaa;
+  font-size: 0.85rem;
+  min-width: 35px;
+}
+
+.rating-count {
+  color: #aaa;
+  font-size: 0.85rem;
+  min-width: 30px;
+  text-align: right;
+}
+
+/* ── Reviews Section ── */
+.reviews-section {
+  background-color: var(--dark-2);
+}
+
+.review-card {
+  background-color: #222;
+  border: 1px solid #333;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.review-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold);
+}
+
+.review-stars i {
+  color: var(--gold);
+  font-size: 0.9rem;
+}
+
+.review-text {
+  color: #bbb;
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.review-author {
+  border-top: 1px solid #333;
+}
+
+.review-avatar {
+  width: 45px;
+  height: 45px;
+  background-color: #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--gold);
+  flex-shrink: 0;
+}
+
+.review-avatar i {
+  color: var(--gold);
+  font-size: 1.3rem;
+}
