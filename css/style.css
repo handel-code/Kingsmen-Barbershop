@@ -704,3 +704,31 @@ body.light-mode .featured-service-card {
   background-color: #fff;
   border-color: #ddd;
 }
+
+/* ── Values Section ── */
+.values-section {
+  background-color: var(--dark);
+}
+
+.value-card {
+  background-color: #222;
+  border: 1px solid #333;
+  border-radius: 12px;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold);
+}
+
+.value-icon {
+  font-size: 2rem;
+  color: var(--gold);
+  display: block;
+}
+
+body.light-mode .value-card {
+  background-color: #fff;
+  border-color: #ddd;
+}
