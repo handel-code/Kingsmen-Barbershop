@@ -162,3 +162,19 @@ fadeElements.forEach(el => {
   el.classList.add('fade-in-hidden');
   fadeObserver.observe(el);
 });
+
+// ── FAQ Search ──
+function searchFAQ() {
+  const query = document.getElementById('faqSearch')?.value.toLowerCase();
+  const items = document.querySelectorAll('.faq-item');
+
+  items.forEach(item => {
+    const question = item.querySelector('.faq-button').textContent.toLowerCase();
+    const answer = item.querySelector('.faq-body')?.textContent.toLowerCase();
+    if (question.includes(query) || answer.includes(query)) {
+      item.style.display = 'block';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+}

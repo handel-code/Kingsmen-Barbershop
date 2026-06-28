@@ -805,3 +805,23 @@ body.light-mode .review-cta-card {
   object-fit: cover;
   display: block;
 }
+
+/* ── FAQ Search ── */
+.faq-search-wrapper {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.faq-search {
+  padding-left: 2.5rem;
+  border-radius: 25px !important;
+}
+
+.faq-search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gold);
+}
