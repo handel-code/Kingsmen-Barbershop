@@ -490,3 +490,6 @@ body {
   color: var(--gold);
   font-size: 1.3rem;
 }
+.review-author small {
+  color: #888 !important;
+}
