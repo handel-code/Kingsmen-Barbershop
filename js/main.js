@@ -120,3 +120,15 @@ function submitBooking() {
     if (el) el.value = '';
   });
 }
+
+// ── Navbar Scroll Effect ──
+window.addEventListener('scroll', () => {
+  const navbar = document.getElementById('mainNav');
+  if (window.scrollY > 50) {
+    navbar.style.backgroundColor = 'rgba(0, 0, 0, 1)';
+    navbar.style.boxShadow = '0 2px 20px rgba(201, 168, 76, 0.15)';
+  } else {
+    navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.95)';
+    navbar.style.boxShadow = 'none';
+  }
+});
