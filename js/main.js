@@ -132,3 +132,16 @@ window.addEventListener('scroll', () => {
     navbar.style.boxShadow = 'none';
   }
 });
+
+// ── Dark / Light Mode Toggle ──
+const toggleBtn = document.getElementById('themeToggle');
+
+if (toggleBtn) {
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+    const isLight = document.body.classList.contains('light-mode');
+    toggleBtn.innerHTML = isLight
+      ? '<i class="bi bi-moon-fill"></i>'
+      : '<i class="bi bi-sun-fill"></i>';
+  });
+}
