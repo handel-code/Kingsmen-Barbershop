@@ -145,3 +145,20 @@ if (toggleBtn) {
       : '<i class="bi bi-sun-fill"></i>';
   });
 }
+
+// ── Scroll Fade-in Animation ──
+const fadeElements = document.querySelectorAll('.highlight-card, .service-card, .team-card, .review-card, .gallery-item, .stat-card');
+
+const fadeObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fade-in-visible');
+      fadeObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+fadeElements.forEach(el => {
+  el.classList.add('fade-in-hidden');
+  fadeObserver.observe(el);
+});
