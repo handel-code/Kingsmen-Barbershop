@@ -848,3 +848,106 @@ body.light-mode .review-cta-card {
     position: static;
   }
 }
+
+/* ── Smooth Scroll ── */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Section Spacing Consistency ── */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* ── Link Transitions ── */
+a {
+  transition: color 0.3s ease;
+}
+
+/* ── Button Focus States ── */
+.btn:focus {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.custom-input:focus {
+  outline: none;
+}
+
+/* ── Typography Refinements ── */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.5px;
+}
+
+p {
+  line-height: 1.8;
+}
+
+.lead {
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #ccc;
+}
+
+/* ── Mobile Responsiveness Polish ── */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
+  }
+
+  .page-banner h1 {
+    font-size: 2rem;
+  }
+
+  .booking-sidebar {
+    position: static;
+  }
+}
+
+/* ── Card Consistency ── */
+.highlight-card,
+.service-card,
+.team-card,
+.review-card,
+.value-card,
+.featured-service-card {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ── Image Consistency ── */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ── Selection Color ── */
+::selection {
+  background-color: var(--gold);
+  color: #111;
+}
+
+/* ── Scrollbar Styling ── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e0b84e;
+}
