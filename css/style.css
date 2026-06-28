@@ -732,3 +732,34 @@ body.light-mode .value-card {
   background-color: #fff;
   border-color: #ddd;
 }
+
+/* ── Booking Sidebar ── */
+.booking-sidebar {
+  background-color: #1a1a1a;
+  border: 1px solid var(--gold);
+  border-radius: 12px;
+  position: sticky;
+  top: 100px;
+}
+
+.sidebar-icon {
+  font-size: 1.3rem;
+  color: var(--gold);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.sidebar-item {
+  border-bottom: 1px solid #2a2a2a;
+  padding-bottom: 1rem;
+}
+
+.sidebar-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+body.light-mode .booking-sidebar {
+  background-color: #fff;
+  border-color: var(--gold);
+}
