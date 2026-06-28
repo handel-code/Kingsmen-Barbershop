@@ -493,3 +493,53 @@ body {
 .review-author small {
   color: #888 !important;
 }
+
+/* ── FAQ Section ── */
+.faq-section {
+  background-color: var(--dark);
+}
+
+.faq-item {
+  background-color: transparent;
+  border: 1px solid #333 !important;
+  border-radius: 10px !important;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.faq-button {
+  background-color: #222 !important;
+  color: #fff !important;
+  font-weight: 600;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.faq-button:not(.collapsed) {
+  color: var(--gold) !important;
+  background-color: #1a1a1a !important;
+}
+
+.faq-button::after {
+  filter: invert(1);
+}
+
+.faq-body {
+  background-color: #1a1a1a;
+  color: #aaa;
+  line-height: 1.8;
+}
+
+.btn-outline-gold {
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.btn-outline-gold:hover {
+  background-color: var(--gold);
+  color: #111;
+}
