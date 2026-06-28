@@ -825,3 +825,26 @@ body.light-mode .review-cta-card {
   transform: translateY(-50%);
   color: var(--gold);
 }
+
+/* ── Mobile Responsiveness Polish ── */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
+  }
+
+  .page-banner h1 {
+    font-size: 2rem;
+  }
+
+  .booking-sidebar {
+    position: static;
+  }
+}
