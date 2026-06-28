@@ -763,3 +763,18 @@ body.light-mode .booking-sidebar {
   background-color: #fff;
   border-color: var(--gold);
 }
+
+/* ── Review CTA ── */
+.review-cta {
+  background-color: var(--dark);
+}
+
+.review-cta-card {
+  background-color: #222;
+  border: 1px solid var(--gold);
+  border-radius: 16px;
+}
+
+body.light-mode .review-cta-card {
+  background-color: #fff;
+}
